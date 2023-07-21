@@ -1,0 +1,13 @@
+[build]
+  base = "client"
+  command = "yarn build"
+  publish = "dist"
+  functions = "backend"
+
+[build.environment]
+  NODE_VERSION = "16"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://anmeldung-9wys.onrender.com/:splat"
+  status = 200
