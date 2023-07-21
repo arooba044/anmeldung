@@ -1592,7 +1592,7 @@ export default {
     async submitForm() {
       this.load = true;
       const response = await axios.post(
-        "https://anmeldung-9wys.onrender.com/generate-pdf",
+        "https://anmeldung-rnbn.onrender.com/generate-pdf",
         {
           formData: this.formData,
         },
