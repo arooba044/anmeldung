@@ -3,10 +3,10 @@ deployment:
   tasks:
     - export CLIENT_PATH=/home/digital3/registration.sorted.berlin/client
     - cd $CLIENT_PATH
-    - yarn install
-    - yarn build
+    - npm install
+    - npm build
 
     - export SERVER_PATH=/home/digital3/registration.sorted.berlin/backend
     - cd $SERVER_PATH
-    - yarn install
-    - yarn start
+    - npm install
+    - npm start
