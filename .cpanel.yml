@@ -8,12 +8,12 @@ deployment:
     - /bin/cd $DEPLOYPATH
 
     # New deployment tasks for frontend (client) and backend (server)
-    - export CLIENT_PATH=/home/digital3/your-project-folder/client
+    - export CLIENT_PATH=/home/digital3/registration.sorted.berlin/client
     - /bin/cd $CLIENT_PATH
     - /usr/local/bin/yarn install
     - /usr/local/bin/yarn build
 
-    - export SERVER_PATH=/home/digital3/your-project-folder/backend
+    - export SERVER_PATH=/home/digital3/registration.sorted.berlin/backend
     - /bin/cd $SERVER_PATH
     - /usr/local/bin/yarn install
     - /usr/local/bin/yarn start
