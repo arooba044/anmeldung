@@ -2,11 +2,11 @@
 deployment:
   tasks:
     - export CLIENT_PATH=/home/digital3/registration.sorted.berlin/client
-    - /bin/cd $CLIENT_PATH
-    - /usr/local/bin/yarn install
-    - /usr/local/bin/yarn build
+    - cd $CLIENT_PATH
+    - yarn install
+    - yarn build
 
     - export SERVER_PATH=/home/digital3/registration.sorted.berlin/backend
-    - /bin/cd $SERVER_PATH
-    - /usr/local/bin/yarn install
-    - /usr/local/bin/yarn start
+    - cd $SERVER_PATH
+    - yarn install
+    - yarn start
