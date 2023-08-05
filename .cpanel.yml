@@ -4,7 +4,7 @@ deployment:
     - export CLIENT_PATH=/home/digital3/registration.sorted.berlin/client
     - cd $CLIENT_PATH
     - npm install
-    - npm build
+    - npm run serve
 
     - export SERVER_PATH=/home/digital3/registration.sorted.berlin/backend
     - cd $SERVER_PATH
