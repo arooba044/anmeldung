@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/digital3/registration.sorted.berlin
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -rf * $DEPLOYPATH/
+    - /bin/cd $DEPLOYPATH
+    - /usr/local/bin/npm install
+    - /usr/local/bin/npm run build
