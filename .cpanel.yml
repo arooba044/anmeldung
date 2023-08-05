@@ -1,9 +1,19 @@
 ---
 deployment:
   tasks:
+    # Existing deployment tasks - leave them as they are
     - export DEPLOYPATH=/home/digital3/registration.sorted.berlin
     - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp -rf * $DEPLOYPATH/
     - /bin/cd $DEPLOYPATH
-    - /usr/local/bin/npm install
-    - /usr/local/bin/npm run build
+
+    # New deployment tasks for frontend (client) and backend (server)
+    - export CLIENT_PATH=/home/digital3/your-project-folder/client
+    - /bin/cd $CLIENT_PATH
+    - /usr/local/bin/yarn install
+    - /usr/local/bin/yarn build
+
+    - export SERVER_PATH=/home/digital3/your-project-folder/backend
+    - /bin/cd $SERVER_PATH
+    - /usr/local/bin/yarn install
+    - /usr/local/bin/yarn start
